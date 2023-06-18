@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Swastik Developer</title>
+
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div id="home" class="Left">Swastik Asija</div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faqs">FAQ's</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="first">
+      <div class="leftsection">
+        Hi, my name is <span class="purple"> Swastik</span>
+        <div>and Iam a passionate</div>
+
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+
+      <div class="rightsection">
+        <img src="https://cdn.dribbble.com/users/2069402/screenshots/5574718/gif-4mb.gif" />
+      </div>
+    </section>
+    <hr />
+    <section id="work" class="secondsection">
+      <span class="text-grey">What I have done so far</span>
+
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="img-top"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAt1BMVEX////kTSbxZSnr6+sAAADkSR7r7/DrWSjpdFzkPwTkQxPHx8fwXBTr8/TiOAD39/fwVwDoq6D97en4v63nmIn3rZXq0Mzyc0Da2tr98vDlXDvxYB/53tlTU1P31M7wpZdoaGjzua/naU3qfWf1x7/tlIPsiXZ7e3uoqKjlVC/r4+HmiXgdHR3pv7e4uLj5ybrpx8E2NjbzhFz2oYT1l3jze00qKiqTk5PqUBNDQ0P0jGjsaUDqSwBMLgSjAAAKR0lEQVR4nO2da1fiShBFo5JAogFFfOEDUdHB950Z5+G9//93XUIMJFhVdJHTTWRxPmmWJmwTO5uu6uB5umzXslxOtk021bZG3z3X+NwVf/xXfs930+3Hyffnk2+3la+xXKCEtd/THR/nNq8Q4fgX0vxaUcLzbB/f8ltXibD2nO6iVdi4UoS1dBeXK0x4V9zrChKOf+dxpQn/et7vmU0rRlh7bs1uqQghlfHtrfWR6Q3gbrKNInw8n91SdcIsecJ8xD2sCe1nTZjLmrD2+E/+d39N3XtlCGv5d0y141UkzL/rvcyJzQoR5r5urSjhZHfPXvUI/9k6TrNVgjB725S8E2YJzy/z+e3ZTY6QeMl6wo/vWhJhMZdfjXC8w2/eChMm1+nf8RcrS9jKfm1lCb1vH2PH6hJmWROuCUGZzsI8Ei+ZISy+KI5wun1M+HdJhFvbk0y2TTe16B89LuyC2AO1m+NtOsWdrbPOOuuss84666yzzjpfJO2rRpVz1S5NeNL0q5zmSfmT2NyocprlAT1/2RBifADhVZUR/SsA4XWlCa8BhINKEw4AhL1o2RhCoh6AsF9pwj6A8CZcNoaQ8AZAeFFpwgsAYbvKt/xmeWlLtG3ZGEIQ0uZ54Ku0Xjb5nYUIQA8MuFkyBcINCGEXesuHEvpdCGGjwoQNCOFDhQkfIIRYbStNmN8ZRNrQ2oYlREjbSNsqTIiQNrS2QQkh0uZ5ZxUmPIMQYrUNSoiRNrC2lSW0IG3g2TYoIWKmLQlU25CEIGkDaxuUECNtnndbWcJbEGEHecsvS5jfV9QBEUK1DUqIkTawtkEJMdImapsfafNnRxueECRtkrb5D3va9Pe1eecJMdImaVu0FwfKtOYfbyY/TjlClLQJRdKoE2wpoyd8zxMWlAZRHp1D6N/G9gnfNu0TDlnChgPCHZZwCCNktc3vOiDc5Qhh0iZpW2Sf8IQnREmbpG1N+yPNWYGw8OdFSZs0n9i8t054scMSYuYSk/BiGh5aJ3zhCVFaKpWBw1ftZaom3GcJIQXgNLy2RU/WCQ9YpYFJm1QGjvasE/7kpQ1RAE7TAmqbmvA7rzT6eysbdqTRa5v6VR2xhBEOEKltasJTlhAnbUL3nl7b1ISslkK69rII3Xu2CQVpQ3TtZeG79yIloJqQlzZI114WXttCStuk9/jaQzuRNq22BXsdPr0DXd7Z2yFQ2rTaFgxCYa7tVDfTVgC0JW3SfCKlbYHU21BuvrRAiJpLTKLTtkCaJMcRAqVNnE8ktC14skVYlDbYXGISXtsePt8Qg0OhaowjREqb0L1HapsbQkzXXha2DExrm9DbACOEFYDTCNpGvH0KhJIqjhApbVL3XkicwrhriTC/I1DXXhbdbFssrCSCEUKlTattsXBR4wiR0iaVgSlti4WVRDBCqLQhtQ1HiJS2kbbxhJS27bkgREobUtvKEFqUNqlIqtQ2HCEWUBBTpbbBCLFaKmnbFUF4b58QLG1S955PEAYRt7ocR4grAKfhy8BUkTTusvn3SBWeEFcATiOUganZtpiN7rBCARgrbcAiqW6+1El5NI1O22CEfHkU1rWXRadtMMIDvgCMlTaxDKwrkuoI+Z42YAE4jU7bYIT8jDda2pTaBiN00dOWhb/jX1skZG+HsKUW0yhn20CEfHkULW3iogt7hC0XXXtZhO49DaCOsO2iay8Lr21kkRRD6KRrLws/MaHTNhWhUABGS5sopiptUxEK0oYnRGkbiBAubThtUxE6lDaxDKzSNhWhIG3YucQkLWHhjOaGqCLkpS0Edu1l4WfbrhULZ3SEfNceXtqk7r3uoSJnbSbUMV0stZiGr5j5oSL/7TKhjskrDbJrLwtorSw3m/hGHNKptHneALPOkiP8ThxSkDZk114W0ENcGMLTn8QhHXXtZQGtBuYID4hDOpxLTAJ69h5DuLNPHNLJUotpQA9x4QhfiEMKSy3wWgp79h5HSL1kJ0stppEe4kJWmVSEu5RJC0st4HOJSXjCIfUYagaRI6ReMi9t+LnEJLzTNIgaE1ck5a5S6ojsDR/ctZeF17ahogzM3S1UhFakTereC6kysO4qPSIO6GipxTR8o1OTeB8YM+9FGEKdtEGXWkyjW3TBde/RhFWQNrkMTPS2MRc1Q1gBaZO0jZpti5mWVJqwCtImzif2zbv3GMIKSJs429Yz795jCCsgbajuPZqQljb+oSZWpE149h61VjZ4pX+cIaROCi9tqGftzYYDVHXvMYTU8TZZQjvSpi0D39MXtYLQZQE4jbJ7T0NYCWmTFl1QZeBYM9JUQtq0ZeC40YyIPwlBeLqz+4M4nHNp02rbVnz/NBh+oqx/ojs6oO/fzqVtge69YPRGuH/rh3nKeoFu8+cLe2tz2LWXRadtE8rgsNcIJ5QZ4c7uzvu+qCYOu/ayLFoGDoJ467XTTS/Yenry3phLMxde2iwUgNOU6d4bUd4/PQzD6A//jzcT99ImaZtRGXj0b3m4N3gxtWahAGwLUJxtMyAcU5ofbZMltFEAToPo3jOvcvNKY0vaxO4943YMY0JB2vBde1n4MjC1VrYkoeMCcBrlootyhIK04bv2siAWXRgTLkHaMIsujAmXIG2Y7j1jwiVIm6xtsSGiMaHTrr0sQhl4OHjaMoI0I2y9/OBv+PakTfxcWT9qNvYO47mUBoRnB2+7M88WclAenUs4hgw3Hp7u40CinEPYfnkfva/anI0jLRW69/KUV73DgD+VEuHFwdHsyaMIbXTtZTH6pIsRZHjd504lR9je/87QfVIae9Km+OTc0X9lt/NKjT0U4cloXBHwZgntSZvuky5GpzIixp5PhMS48jn5HVuUNn333uhUzo49BcL2/vsuMa7MIbQ1l5hkke69mbFnSsiPK3MI7Unbwt17I0j/9mPsSQnlcUUmtFQATlPiA8qysWc8rpwaXZocoT1pK9u9l4w91z2DcUUmtFQATsM/MtmY8o+abtOhtAmLLoyz0HMxrD7UpJj52mad0LcpbVL3njtCO117WYy1zSKhrQJwGuExZRYJi/+GtgrAacovulAT1md2YFXaEIsuVIT1WbwNq3OJScovujAmpOiSWJU2xKILM0KGbkxoby4xSflFF/MJuZP3EavShvjk3DmEMt2Y0OJcYhKbI82ck/cRu9ImdO+VJDSjG8cyYelPzqUIFXg2C8Bp6FauEoQaunRm3TKhd9HrloIsECrpwrDRt/kGf5KTm1t/Ycr6widv2LF7J5zJ2d5VM1xkYK0vdvKu+3Zvg3RuiNZDA0LlyQubVz2nJ6+Ydv86CkuOPQJdMqF8Y/kOb5CyYw9HFzYdjSsmObl5WHzsIfGaXbfjiknO+o3Fxp5PdGG0nHHFJBedBcaeAl4yrlTm0qSz+NiTjCuDGwtP1rGQi97oZqmCTH2lqpcmmZObgfHYU81xxSTtfq6Dnafzbytwy1s8Fx3hZvkVxhWTjESdOJVfaVwxyVlh7FmeSltN60PUk3FlmSptN+3+7XDgeFz5H+mKcPDrH+r9AAAAAElFTkSuQmCC" />
+          <div class="vertical-title">HTML Developer (2017-2018)</div>
+          <div class="vertical-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+            tenetur quos facilis et aut, corporis quo magni, recusandae nulla
+            accusantium necessitatibus nihil blanditiis?
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top"
+            src="data:image/png;base64,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" />
+          <div class="vertical-title">Node.js Developer (2018-2019)</div>
+          <div class="vertical-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+            tenetur quos facilis et aut, corporis quo magni, recusandae nulla
+            accusantium necessitatibus nihil blanditiis?
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" />
+          <div class="vertical-title">C programmer (2020-2021)</div>
+          <div class="vertical-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+            tenetur quos facilis et aut, corporis quo magni, recusandae nulla
+            accusantium necessitatibus nihil blanditiis?
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top"
+            src="data:image/jpeg;base64,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" />
+          <div class="vertical-title">Python Developer (2021-2022)</div>
+          <div class="vertical-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+            tenetur quos facilis et aut, corporis quo magni, recusandae nulla
+            accusantium necessitatibus nihil blanditiis?
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top"
+            src="data:image/png;base64,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" />
+          <div class="vertical-title">CSS Developer (2022-2023)</div>
+          <div class="vertical-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+            tenetur quos facilis et aut, corporis quo magni, recusandae nulla
+            accusantium necessitatibus nihil blanditiis?
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+    <section>
+      <div class="id">
+        <h1>Our clients Say!</h1>
+      </div>
+      <div class="reviews-box">
+        <h3>Great person!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, natus nobis? A, aliquam! Praesentium,
+          laudantium cupiditate est consectetur culpa eligendi vitae nam mollitia labore ullam voluptate dolores tempora
+          dolor deleniti amet. Facere vel iste facilis dolore quia. Pariatur, officia repudiandae sunt minus quibusdam
+          commodi, minima, perferendis autem itaque culpa dicta nemo molestias consequatur inventore ea in. Voluptate
+          repellendus quo aspernatur officiis vitae nemo autem iste impedit. Rerum repudiandae dolor saepe. - <span
+            class="author">John Doe</span></p>
+        <p class="date">Posted on June 1, 2023</p>
+      </div>
+
+      <div class="reviews-box">
+        <h3>Highly recommended!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur itaque nisi aspernatur sed
+          deleniti? Et repudiandae ex aliquid repellendus fugit enim suscipit dignissimos dolorum consequuntur
+          asperiores. A ad, modi illum magnam aut beatae atque deserunt corrupti quisquam reprehenderit labore
+          repellendus autem sunt, dolores laborum ut blanditiis alias temporibus earum aperiam animi necessitatibus
+          iusto nesciunt. Fugit sit aut delectus autem dolores explicabo, vitae corporis placeat eos, quasi voluptate
+          aliquid quisquam? <span class="author">Jane Smith</span></p>
+        <p class="date">Posted on May 30, 2023</p>
+      </div>
+    </section>
+    <section>
+      <div id="about" class="vision">
+
+        <table>
+          <tr>
+            <td>
+              <div class="op">
+                <h1>My Vision</h1>
+              </div>
+              <div class="my">
+                <p>My vision for coding encompasses a holistic approach that combines inclusivity, democratization,
+                  creativity, collaboration, and ethical responsibility. By embracing these principles, we can unlock
+                  coding's transformative potential, revolutionize industries, and address pressing global challenges.
+                  Coding has the power to shape a brighter future, and it is up to us to harness its capabilities,
+                  empower individuals, and create a world where innovation knows no boundaries.</p>
+            </td>
+      </div>
+      <td>
+        <div class="my1"><img src="https://abhipatel10.github.io/AISKCON-CONSTRUCTION/img/vectors/vision.webp"
+            alt="image" width="600px" height="600px">
+        </div>
+      </td>
+      </tr>
+      </table>
+
+
+
+
+      </div>
+    </section>
+    <section>
+      <table>
+        <tr>
+          <td>
+            <div class="web">
+              <h1>How I become a Web Developer ?
+            </div>
+            </h1>
+            <p>
+            <div class="p">Becoming a web developer is a transformative journey that starts with curiosity and
+              self-initiated learning. It requires perseverance, dedication, and a continuous thirst for knowledge. My
+              personal journey into web development taught me the value of practical experience, collaboration, and
+              ongoing growth. With every project and lesson learned, I forged a path towards professional fulfillment,
+              making a positive impact through the web solutions I create.</div>
+            </p>
+            </div>
+          </td>
+          <td>
+            <div class="image1"><img
+                src="https://camo.githubusercontent.com/40165a147c3dcea0fa1db780bb533fc5f98546ccfb9d5d05ddb2f429277f5348/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966"
+                alt="image" width="600px"></div>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+    </section>
+
+    <section>
+      <div class="mission">
+        <h1>My mission for coding</h1>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <div class="img"><img src="https://abhipatel10.github.io/AISKCON-CONSTRUCTION/img/vectors/mission.webp"
+                alt="image" height="600px" width="600px"></div>
+          </td>
+          <td>My mission for coding is to use my skills and knowledge to create innovative and efficient solutions that
+            solve real-world problems. I am driven to continuously learn and adapt to new technologies, frameworks, and
+            methodologies in order to stay at the forefront of the industry. By collaborating with others and embracing
+            a user-centered approach, I aim to develop software that enhances user experiences and improves lives. I am
+            committed to upholding ethical standards, ensuring data security, and promoting inclusivity in my coding
+            practices. Through my mission, I aspire to make a positive impact and contribute to the advancement of
+            technology.
+
+          </td>
+        </tr>
+      </table>
+      <section>
+        <h1 id="faqs" class="faqs">Frequently Asked Questions</h1>
+
+
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-question">What programming languages do you specialize in?</label>
+            <div class="faq-answer">
+              As a coder, I specialize in multiple programming languages, including but not limited to Python,
+              JavaScript, Java, HTML, and CSS.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-question">What services do you offer as a coder?</label>
+            <div class="faq-answer">
+              I offer a range of services as a coder, including web development, software development, mobile app
+              development, database management, and algorithm design.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-question">Are you familiar with working in a specific industry or
+              domain?</label>
+            <div class="faq-answer">
+              Yes, I have experience working in various industries, such as e-commerce, finance, healthcare, education,
+              and more. I adapt my coding skills to meet the specific needs of each industry.
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-toggle">
+            <label for="faq4" class="faq-question">How do you ensure the security of the code you develop?</label>
+            <div class="faq-answer">Security is a top priority in my coding practices. I follow industry best practices,
+              employ secure coding techniques, and use encryption and authentication measures to ensure the code I
+              develop is secure.
+
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq5" class="faq-toggle">
+            <label for="faq5" class="faq-question">Can you work as part of a team or independently?</label>
+            <div class="faq-answer">I am comfortable working in both team environments and independently. I have
+              experience collaborating with cross-functional teams and can adapt to different work settings.
+
+            </div>
+
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq6" class="faq-toggle">
+            <label for="faq6" class="faq-question">What is your preferred development methodology?</label>
+            <div class="faq-answer">I am familiar with various development methodologies, such as Agile, Scrum, and
+              Waterfall. My preferred methodology depends on the project requirements and client preferences.
+            </div>
+
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq7" class="faq-toggle">
+            <label for="faq7" class="faq-question">Can you provide ongoing support and maintenance for the projects you
+              develop?</label>
+            <div class="faq-answer">Yes, I offer ongoing support and maintenance services for the projects I develop. I
+              ensure that the code remains up-to-date, fix any issues that may arise, and provide enhancements and
+              updates as required.
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <section id="contact" class="contact">
+        <h1 class="ch1">Contact Me</h1>
+        <form>
+          <div class="input">
+            <input type="text" id="name" placeholder="Name" size="25">
+            <br>
+
+            <input type="text" placeholder="Email" size="25">
+            <br>
+            <input type="text" placeholder="Message" size="25">
+            <br>
+            <button class="cbutton">Send</button>
+          </div>
+        </form>
+
+
+
+
+
+
+      </section>
+
+
+  </main>
+
+
+
+
+
+
+  <footer>~Made with &#10084; by Swastik Asija</footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Web Developer .",
+        "Graphic Designer .",
+        "Video Editor. ",
+        "C programmer.",
+        "Java programmer.",
+      ],
+      typeSpeed: 40,
+      loop: true,
+    });
+
+  </script>
+
+</body>
+
+</html>
