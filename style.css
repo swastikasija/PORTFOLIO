@@ -3,9 +3,6 @@
     * {
       margin: 0;
       padding: 0;
-
-
-
     }
 
     html {
@@ -19,9 +16,6 @@
       height: 100vh;
 
       color: rgb(0, 7, 7);
-
-
-
     }
 
     nav {
@@ -31,15 +25,12 @@
       height: 80px;
       background-color: rgb(249, 247, 249);
       color: black;
-
       top: 0;
     }
 
     nav ul {
       display: flex;
       justify-content: center;
-
-
     }
 
     nav li {
@@ -58,9 +49,6 @@
 
     .Left {
       font-size: 1.5rem;
-
-
-
     }
 
     .first {
@@ -68,15 +56,10 @@
       justify-content: space-around;
       align-items: center;
       margin: 130px 0;
-
-
-
     }
 
     .first div> {
       width: 30%;
-
-
     }
 
     .leftsection {
